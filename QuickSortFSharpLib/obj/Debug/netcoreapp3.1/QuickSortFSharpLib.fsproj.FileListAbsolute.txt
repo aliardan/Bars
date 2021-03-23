@@ -1,0 +1,16 @@
+C:\repos\Bars\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.deps.json
+C:\repos\Bars\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.dll
+C:\repos\Bars\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.pdb
+C:\repos\Bars\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.fsprojAssemblyReference.cache
+C:\repos\Bars\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.AssemblyInfoInputs.cache
+C:\repos\Bars\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.AssemblyInfo.fs
+C:\repos\Bars\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.dll
+C:\repos\Bars\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.pdb
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.deps.json
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.dll
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\bin\Debug\netcoreapp3.1\QuickSortFSharpLib.pdb
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.fsprojAssemblyReference.cache
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.AssemblyInfoInputs.cache
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.AssemblyInfo.fs
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.dll
+C:\repos\Bars\QuickSort\QuickSortFSharpLib\obj\Debug\netcoreapp3.1\QuickSortFSharpLib.pdb
