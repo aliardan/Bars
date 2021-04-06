@@ -6,12 +6,6 @@ namespace SubsidyCalculation
     {
         public event EventHandler<string> OnNotify;
         public event EventHandler<Tuple<string, Exception>> OnException;
-
-        private void ExceptionMessage(string message)
-        {
-            OnException?.Invoke(this, new Tuple<string, Exception>(message, new Exception(message)));
-        }
-
         private bool DataValidator(Volume volume, Tariff tariff, out string message)
         {
             message = String.Empty;
@@ -22,7 +16,7 @@ namespace SubsidyCalculation
             if (volume.ServiceId != tariff.ServiceId)
                 message += "<ServiceId> Идентификаторы услуг объема и тарифа не совпадают!\n";
 
-            if (tariff.PeriodBegin <= volume.Month || volume.Month <= tariff.PeriodEnd)
+            if (tariff.PeriodEnd <= volume.Month || volume.Month < tariff.PeriodBegin)
                 message += "<Month> Месяц объема не входит в период действия тарифа!\n";
 
             if (tariff.Value <= 0)
@@ -43,9 +37,9 @@ namespace SubsidyCalculation
 
                 if (!DataValidator(volume, tariff, out string message))
                 {
-                    ExceptionMessage(message);
-                    return null;
+                    OnException?.Invoke(this, new Tuple<string, Exception>(message, new Exception(message)));
                 }
+
 
                 charge = new Charge()
                 {
@@ -57,9 +51,11 @@ namespace SubsidyCalculation
 
                 OnNotify?.Invoke(this, $"Расчёт успешно завершён в {DateTime.UtcNow:G}");
             }
+
             catch (Exception ex)
             {
                 OnException?.Invoke(this, new Tuple<string, Exception>(ex.Message, ex));
+                throw;
             }
 
             return charge;

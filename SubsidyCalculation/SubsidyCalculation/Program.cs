@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 
 namespace SubsidyCalculation
 {
@@ -6,7 +7,7 @@ namespace SubsidyCalculation
     {
         static void Main(string[] args)
         {
-            Tariff tariff = new Tariff() { ServiceId = 1, HouseId = 1, PeriodBegin = DateTime.Today, PeriodEnd = DateTime.UtcNow, Value = 10 };
+            Tariff tariff = new Tariff() { ServiceId = 1, HouseId = 1, PeriodBegin = DateTime.Today, PeriodEnd = DateTime.Now, Value = 10 };
             Volume volume = new Volume() { ServiceId = 1, HouseId = 1, Month = DateTime.UtcNow, Value = 10 };
             SubsidyCalculation subsidyCalculation = new SubsidyCalculation();
             subsidyCalculation.OnNotify += Notify;
